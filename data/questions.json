@@ -78,6 +78,7 @@
   {
     "question_number": 5,
     "question_text": "Which classification is correct for the box marked “Registration” in the given E-R Diagram?",
+    "question_image": "images/Q5.png",
     "options": {
       "A": "Intersection data",
       "B": "Modality data",
@@ -86,12 +87,7 @@
     },
     "correct_answer": "A",
     "explanation": {
-      "correct": "The 'Registration' entity is an associative entity, also known as intersection data. It resolves a many-to-many relationship between 'Student' and 'Course' by holding foreign keys from both tables.",
-      "incorrect": {
-        "B": "Modality refers to the minimum number of instances in a relationship, which is a property of the relationship, not an entity classification.",
-        "C": "Cardinality refers to the maximum number of instances in a relationship, which is a property of the relationship, not an entity classification.",
-        "D": "'Student data' refers to the attributes within the 'Student' entity, not the 'Registration' entity."
-      }
+      "correct": "The 'Registration' entity is an associative entity, also known as intersection data. It resolves a many-to-many relationship between 'Student' and 'Course' by holding foreign keys from both tables."
     }
   },
   {
@@ -116,6 +112,7 @@
   {
     "question_number": 7,
     "question_text": "What is the E-R Diagram about an online pet food vendor showing?",
+    "question_image": "images/Q7.png",
     "options": {
       "A": "An Invoice Line can include many Items.",
       "B": "An item can only be included in one Invoice Line.",
@@ -173,6 +170,7 @@
   {
     "question_number": 10,
     "question_text": "What is the correct way to read the modality on the right side of the association?",
+    "question_image": "images/Q10.png",
     "options": {
       "A": "A maximum of one activity",
       "B": "A maximum of zero activities",
@@ -192,6 +190,7 @@
   {
     "question_number": 11,
     "question_text": "What is the modality of Volunteer?",
+    "question_image": "images/Q11.png",
     "options": {
       "A": "Two or more",
       "B": "Two",
@@ -261,7 +260,7 @@
       "incorrect": {
         "A": "'Referrals' is not a standard database term in this context.",
         "B": "This describes a backup or recovery mechanism, not referential integrity.",
-        "D": "This describes an action that would not violate referential integrity. A violation occurs if you delete a primary key row that is still being referenced by foreign keys in other tables."
+        "C": "This describes an action that would not violate referential integrity. A violation occurs if you delete a primary key row that is still being referenced by foreign keys in other tables."
       }
     }
   },
@@ -743,6 +742,7 @@
   {
     "question_number": 40,
     "question_text": "Given the table EMP_PROJ (PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, PROJ_START, HOURS) (shown above), which of the following is a partial dependency?",
+    "question_image": "images/Q40.png",
     "options": {
       "A": "PROJ_NUM --> PROJ_NAME",
       "B": "PROJ_NAME --> HOURS",
@@ -851,7 +851,8 @@
         "A": "`CHANGE` is not the standard SQL command for this operation; `UPDATE` is.",
         "B": "`ROLLBACK` is used to undo transactions, not to make specific data changes.",
         "C": "`EDIT` is not a standard SQL command for this operation."
-      }
+      },
+      "explanation_image": "images/A45.png"
     }
   },
   {
@@ -870,7 +871,8 @@
         "B": "`REMOVE` is not a standard SQL command for deleting rows.",
         "C": "`ERASE` is not a standard SQL command for deleting rows.",
         "D": "`ROLLBACK` is used to undo an entire transaction, not to delete specific rows based on a condition."
-      }
+      },
+      "explanation_image": "images/A46.png"
     }
   },
   {
@@ -889,7 +891,8 @@
         "A": "The syntax is correct, but `<Conditions>` is a more general and accurate term than `<Item>` for the `WHERE` clause.",
         "B": "`LIST` is not a standard SQL command.",
         "D": "`LIST` is not a standard SQL command, and `<Conditions>` is more appropriate than `<Item>`."
-      }
+      },
+      "explanation_image": "images/A47.png"
     }
   },
   {
@@ -1085,6 +1088,7 @@
   {
     "question_number": 58,
     "question_text": "Scenario: Each teacher is associated with exactly one campus. The address in the table is the address for the campus where the teacher teaches. What change would you need to make to normalize the database to the third normal form (3NF)?",
+    "question_image": "images/Q58.png",
     "options": {
       "A": "Combine the FirstName and LastName columns into a single column.",
       "B": "Combine the Campus, Address, City, State, Country, and PostalCode columns into a single column.",
@@ -1093,12 +1097,7 @@
     },
     "correct_answer": "D",
     "explanation": {
-      "correct": "The current table has a transitive dependency: TeacherID -> Campus -> Address. The address information depends on the Campus, which in turn depends on the TeacherID. To achieve 3NF, this transitive dependency must be removed. This is done by creating a new `Campus` table with `Campus` as its primary key and all the address fields. The original `Teachers` table will then only contain a foreign key column for `Campus`, linking to the new table.",
-      "incorrect": {
-        "A": "Combining name columns is a matter of style or preference; it does not address any normalization issues here.",
-        "B": "Combining address columns into one would violate 1NF by creating multivalued fields.",
-        "C": "This incorrectly suggests putting the TeacherID in the new Campus table. This would create a one-to-one relationship from Campus to Teacher, which is the reverse of what is needed."
-      }
+      "correct": "The current table has a transitive dependency: TeacherID -> Campus -> Address. The address information depends on the Campus, which in turn depends on the TeacherID. To achieve 3NF, this transitive dependency must be removed. This is done by creating a new `Campus` table with `Campus` as its primary key and all the address fields. The original `Teachers` table will then only contain a foreign key column for `Campus`, linking to the new table."
     }
   },
   {
@@ -1123,6 +1122,7 @@
   {
     "question_number": 60,
     "question_text": "The table above has the following characteristics: Each student has a unique StudentID that references the Students table. A specific test can be taken more than once. Each instructor has a unique InstructorID that references the Instructors table. Each student may take multiple tests on the same date. Each student may take tests on multiple dates. What column or columns should you use for the primary key?",
+    "question_image": "images/Q60.png",
     "options": {
       "A": "StudentID, Date",
       "B": "StudentID, Test, Date, InstructorID",
@@ -1142,6 +1142,7 @@
   {
     "question_number": 61,
     "question_text": "Scenario: You are creating a relational database to store information about instructors and the courses that each instructor teaches. Each course is taught by a single instructor. You have created an Instructor table and a Course table as shown above. You need to create a relationship between the Instructor table and the Course table. You need to keep duplicate data to a minimum. How would you do this?",
+    "question_image": "images/Q61.png",
     "options": {
       "A": "Create a new column in the Instructor table.",
       "B": "Create new columns in the Instructors table for each course taught.",
@@ -1150,12 +1151,7 @@
     },
     "correct_answer": "D",
     "explanation": {
-      "correct": "This scenario describes a one-to-many relationship (one instructor teaches many courses, but each course is taught by one instructor). To implement this, you add a foreign key column to the table on the 'many' side of the relationship. In this case, you would add a new column, such as `InstructorID`, to the `Course` table to refer to the primary key of the `Instructor` table.",
-      "incorrect": {
-        "A": "Creating a new column in the `Instructor` table (e.g., for CourseID) would only work if an instructor taught only one course, which is not the case.",
-        "B": "Creating new columns like `Course1`, `Course2` in the `Instructor` table violates 1NF and is an inflexible design.",
-        "C": "Creating a new linking table is the solution for a many-to-many relationship, not a one-to-many relationship."
-      }
+      "correct": "This scenario describes a one-to-many relationship (one instructor teaches many courses, but each course is taught by one instructor). To implement this, you add a foreign key column to the table on the 'many' side of the relationship. In this case, you would add a new column, such as `InstructorID`, to the `Course` table to refer to the primary key of the `Instructor` table."
     }
   },
   {
@@ -1180,6 +1176,7 @@
   {
     "question_number": 63,
     "question_text": "Scenario: Agents at the NWREA may be assigned as a mentor to zero or more other agents. However, each agent being mentored is mentored by only one NWREA agent. Which kind of relationship does the diagram depict?",
+    "question_image": "images/Q63.png",
     "options": {
       "A": "Unary one-to-many",
       "B": "Binary many-to-many",
@@ -1218,6 +1215,7 @@
   {
     "question_number": 65,
     "question_text": "What is the modality of appointment?",
+    "question_image": "images/Q65.png",
     "options": {
       "A": "At least one",
       "B": "Dependent on the quantity",
@@ -1237,6 +1235,7 @@
   {
     "question_number": 66,
     "question_text": "What form is this table in?",
+    "question_image": "images/Q66.png",
     "options": {
       "A": "Unnormalized",
       "B": "1NF",
@@ -1256,6 +1255,7 @@
   {
     "question_number": 67,
     "question_text": "What form is this table in?",
+    "question_image": "images/Q67.png",
     "options": {
       "A": "Unnormalized",
       "B": "1NF",
@@ -1269,12 +1269,14 @@
         "B": "It violates 1NF due to the multivalued address and the repeating activity groups.",
         "C": "It cannot be in 2NF because it is not in 1NF.",
         "D": "It cannot be in 3NF because it is not in 1NF."
-      }
+      },
+      "explanation_image": "images/A67.png"
     }
   },
   {
     "question_number": 68,
     "question_text": "What form is this table in?",
+    "question_image": "images/Q68.png",
     "options": {
       "A": "Unnormalized",
       "B": "1NF",
@@ -1288,12 +1290,14 @@
         "A": "The table is normalized at least to 1NF as it has no repeating groups or multivalued attributes.",
         "B": "It is in 1NF, but it is also in 2NF because it has no partial dependencies (assuming Activity ID is the key).",
         "D": "It is not in 3NF because of the transitive dependency involving the Coordinator's details."
-      }
+      },
+      "explanation_image": "images/A68.png"
     }
   },
   {
     "question_number": 69,
     "question_text": "What form is this table in?",
+    "question_image": "images/Q69.png",
     "options": {
       "A": "Unnormalized",
       "B": "1NF",
@@ -1307,7 +1311,8 @@
         "A": "The table is in 1NF because it lacks repeating groups and multivalued attributes.",
         "C": "It is not in 2NF due to the presence of multiple partial dependencies.",
         "D": "It cannot be in 3NF because it is not in 2NF."
-      }
+      },
+      "explanation_image": "images/A69.png"
     }
   }
 ]
