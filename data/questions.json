@@ -1,0 +1,1313 @@
+[
+  {
+    "question_number": 1,
+    "question_text": "A record consists of a ____.",
+    "options": {
+      "A": "Character",
+      "B": "Collection of related characters",
+      "C": "Set of one or more fields",
+      "D": "Group of files"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "A record, or a row in a table, is composed of a set of related fields that describe a single entity.",
+      "incorrect": {
+        "A": "A character is the smallest unit of data, such as a letter or a number, not a complete record.",
+        "B": "A collection of related characters forms a field (or attribute), which is a component of a record, not the record itself.",
+        "D": "A database is a group of related files, whereas a record is a component within a table inside a database."
+      }
+    }
+  },
+  {
+    "question_number": 2,
+    "question_text": "A DBMS performs several important functions that guarantee the integrity and consistency of the data in the database. Which of the following is NOT one of those functions?",
+    "options": {
+      "A": "Data integrity management",
+      "B": "Data storage management",
+      "C": "Data reports",
+      "D": "Security management"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "While a DBMS holds the data that can be used to generate reports, the creation of data reports is typically handled by analytics or reporting tools, not the core DBMS functions.",
+      "incorrect": {
+        "A": "Data integrity management is a core function of a DBMS, ensuring data adheres to defined rules and is consistent.",
+        "B": "Data storage management is a fundamental function of a DBMS, which handles the physical storage of data.",
+        "D": "Security management is a crucial function of a DBMS, controlling user access and permissions to protect data."
+      }
+    }
+  },
+  {
+    "question_number": 3,
+    "question_text": "Which item is unstructured data?",
+    "options": {
+      "A": "A record representing one student",
+      "B": "A video",
+      "C": "A table that holds student data",
+      "D": "A relational database that holds course registration data"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "A video is considered unstructured data because it does not have a pre-defined data model or is not organized in a pre-defined manner.",
+      "incorrect": {
+        "A": "A record is a classic example of structured data, as it is organized into specific fields.",
+        "C": "A table is, by definition, a structure of rows and columns for organizing data.",
+        "D": "A relational database is a system for storing and managing structured data."
+      }
+    }
+  },
+  {
+    "question_number": 4,
+    "question_text": "Data is/are ______.",
+    "options": {
+      "A": "Information",
+      "B": "Raw facts",
+      "C": "Processed information",
+      "D": "A DBMS"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "Data consists of raw, unprocessed facts. It only becomes information when it is processed and organized in a meaningful way.",
+      "incorrect": {
+        "A": "Information is the result of processing, organizing, and structuring data to make it useful.",
+        "C": "Processed information is a definition of 'information', not raw data.",
+        "D": "A DBMS (Database Management System) is the software used to manage and interact with a database; it is not data itself."
+      }
+    }
+  },
+  {
+    "question_number": 5,
+    "question_text": "Which classification is correct for the box marked “Registration” in the given E-R Diagram?",
+    "options": {
+      "A": "Intersection data",
+      "B": "Modality data",
+      "C": "Cardinality data",
+      "D": "Student data"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The 'Registration' entity is an associative entity, also known as intersection data. It resolves a many-to-many relationship between 'Student' and 'Course' by holding foreign keys from both tables.",
+      "incorrect": {
+        "B": "Modality refers to the minimum number of instances in a relationship, which is a property of the relationship, not an entity classification.",
+        "C": "Cardinality refers to the maximum number of instances in a relationship, which is a property of the relationship, not an entity classification.",
+        "D": "'Student data' refers to the attributes within the 'Student' entity, not the 'Registration' entity."
+      }
+    }
+  },
+  {
+    "question_number": 6,
+    "question_text": "Which type of relationship exists between Student and Course in the Q5 diagram?",
+    "options": {
+      "A": "One-to-many binary",
+      "B": "Many-to-many binary",
+      "C": "One-to-many unary",
+      "D": "Many-to-many unary"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "The relationship is binary because it involves two distinct entities (Student and Course). The crow's foot notation on both ends of the relationship line indicates a 'many' cardinality, making it a many-to-many relationship.",
+      "incorrect": {
+        "A": "A one-to-many relationship would have a crow's foot on only one side of the relationship.",
+        "C": "A unary relationship involves an association within a single entity, not between two different entities.",
+        "D": "A unary relationship involves a single entity. This diagram shows two entities, making it binary."
+      }
+    }
+  },
+  {
+    "question_number": 7,
+    "question_text": "What is the E-R Diagram about an online pet food vendor showing?",
+    "options": {
+      "A": "An Invoice Line can include many Items.",
+      "B": "An item can only be included in one Invoice Line.",
+      "C": "One Invoice Line must include a minimum of one and a maximum of one Item.",
+      "D": "The relationship between Item and Invoice Line is many-to-many."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The notation on the relationship line next to the 'Item' entity is 'one and only one' (a single vertical bar). This means an 'Invoice Line' must be associated with exactly one 'Item'.",
+      "incorrect": {
+        "A": "The diagram shows that an 'Invoice Line' can include only one item, not many.",
+        "B": "The crow's foot notation next to the 'Invoice Line' entity indicates that an 'Item' can be included in many invoice lines.",
+        "D": "The relationship is one-to-many from Item to Invoice Line, not many-to-many."
+      }
+    }
+  },
+  {
+    "question_number": 8,
+    "question_text": "Example: A pet owner can have many pets; a specific pet is linked to one pet owner. Which kind of binary relationship is described in this example?",
+    "options": {
+      "A": "One-to-one",
+      "B": "One-to-many",
+      "C": "Many-to-many",
+      "D": "Associative"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "This describes a one-to-many relationship. One 'pet owner' can be associated with 'many pets', but each 'pet' is associated with only 'one pet owner'.",
+      "incorrect": {
+        "A": "A one-to-one relationship would mean one owner has only one pet, and one pet has only one owner.",
+        "C": "A many-to-many relationship would imply an owner could have many pets and a pet could have multiple owners.",
+        "D": "An associative entity is used to implement a many-to-many relationship, but the relationship itself is not called associative."
+      }
+    }
+  },
+  {
+    "question_number": 9,
+    "question_text": "A Database Model is ____.",
+    "options": {
+      "A": "a conceptual framework for database systems",
+      "B": "a leading relational database system sponsored by Oracle",
+      "C": "s suitable for non-commercial applications such as education",
+      "D": "is a specification of database objects such as tables"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "A database model is a conceptual framework that defines the logical structure of a database, including relationships and constraints.",
+      "incorrect": {
+        "B": "This describes a specific product (like Oracle Database), not the general concept of a database model.",
+        "C": "This describes an application context, not what a database model is.",
+        "D": "This describes a database schema, which is the implementation of a conceptual model, but not the model itself."
+      }
+    }
+  },
+  {
+    "question_number": 10,
+    "question_text": "What is the correct way to read the modality on the right side of the association?",
+    "options": {
+      "A": "A maximum of one activity",
+      "B": "A maximum of zero activities",
+      "C": "A minimum of zero activities",
+      "D": "A maximum of many activities"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "Modality refers to the minimum number of entity occurrences that can be involved in a relationship. The circle symbol (O) on the right side indicates a modality of zero, meaning an instance of the entity on the left (Coordinator) can exist without being associated with any instances of the entity on the right (Activity). Thus, there is a minimum of zero activities.",
+      "incorrect": {
+        "A": "Maximums are referred to as cardinality. The symbol for a maximum of one is a single vertical line (|).",
+        "B": "The circle (O) represents a minimum of zero, not a maximum.",
+        "D": "Maximums are referred to as cardinality. The symbol for a maximum of many is the crow's foot."
+      }
+    }
+  },
+  {
+    "question_number": 11,
+    "question_text": "What is the modality of Volunteer?",
+    "options": {
+      "A": "Two or more",
+      "B": "Two",
+      "C": "Dependent on registration date",
+      "D": "At least one"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "Modality represents the minimum number of associations. The symbol on the line next to the 'Registration' entity is a vertical bar (|), which indicates a minimum of one. Therefore, a Volunteer must have at least one Registration.",
+      "incorrect": {
+        "A": "There is no standard symbol for 'two or more' in this notation.",
+        "B": "There is no standard symbol for 'two' in this notation.",
+        "C": "The modality is determined by the symbols on the relationship line, not by an attribute value like the registration date."
+      }
+    }
+  },
+  {
+    "question_number": 12,
+    "question_text": "What type of relationship is expressed with the phrase “A Painter paints one or more Paintings”?",
+    "options": {
+      "A": "1:M",
+      "B": "1:1",
+      "C": "M:1",
+      "D": "M:N"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The phrase describes a single painter ('one') creating multiple paintings ('or more,' which implies many). This is a one-to-many relationship, represented as 1:M.",
+      "incorrect": {
+        "B": "A 1:1 relationship would mean a painter creates only one painting.",
+        "C": "A M:1 relationship would mean many painters collaborate on one painting.",
+        "D": "A M:N relationship would mean many painters can create many paintings, and a painting could be created by many painters."
+      }
+    }
+  },
+  {
+    "question_number": 13,
+    "question_text": "The entity integrity rule requires that ____.",
+    "options": {
+      "A": "All primary key entries are unique",
+      "B": "A part of the key may be null",
+      "C": "Foreign key values do not reference primary key values",
+      "D": "Duplicate object values are allowed"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The entity integrity rule states that the primary key of a table must contain unique values and cannot be null. This ensures that every row in a table can be uniquely identified.",
+      "incorrect": {
+        "B": "The entity integrity rule explicitly forbids null values for any part of a primary key.",
+        "C": "This is related to referential integrity, not entity integrity. Foreign keys must reference existing primary keys.",
+        "D": "This contradicts the purpose of a primary key, which is to ensure uniqueness."
+      }
+    }
+  },
+  {
+    "question_number": 14,
+    "question_text": "What does the ‘refer’ in referential integrity mean?",
+    "options": {
+      "A": "\"The relationships between entities and attributes, also called referrals.\"",
+      "B": "Reference points that databases place in each record during backups.",
+      "C": "A foreign key in a table must refer to a valid primary key in another table.",
+      "D": "You delete a row in one table whose primary key does not have a matching foreign key value in another table."
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "Referential integrity is a rule that ensures that relationships between tables remain consistent. It means that a foreign key value in one table must have a corresponding and valid primary key value in the referenced table.",
+      "incorrect": {
+        "A": "'Referrals' is not a standard database term in this context.",
+        "B": "This describes a backup or recovery mechanism, not referential integrity.",
+        "D": "This describes an action that would not violate referential integrity. A violation occurs if you delete a primary key row that is still being referenced by foreign keys in other tables."
+      }
+    }
+  },
+  {
+    "question_number": 15,
+    "question_text": "A table is perceived as a ____.",
+    "options": {
+      "A": "flat structure",
+      "B": "two-dimensional structure",
+      "C": "linked structure",
+      "D": "graph"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "A relational database table is logically represented as a two-dimensional structure consisting of rows (records) and columns (attributes).",
+      "incorrect": {
+        "A": "While a single file might be called a 'flat file', the term 'two-dimensional structure' is a more precise description for a relational table.",
+        "C": "This describes a different data model, like a linked list, not a relational table.",
+        "D": "This describes a graph data model, not a relational table."
+      }
+    }
+  },
+  {
+    "question_number": 16,
+    "question_text": "Another word for the term “relation” is ____.",
+    "options": {
+      "A": "Datafile",
+      "B": "Data index",
+      "C": "Table Name",
+      "D": "Data query"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "In the context of the relational model, a 'relation' is the formal term for a table. 'Table' is the more commonly used term.",
+      "incorrect": {
+        "A": "A datafile is a physical file on a disk where data is stored; a relation is a logical concept.",
+        "B": "A data index is a separate structure used to speed up data retrieval; it is not the relation itself.",
+        "D": "A data query is a request for information from the database, not the data container."
+      }
+    }
+  },
+  {
+    "question_number": 17,
+    "question_text": "DISTINCT filters the results to remove duplicates. ORDER BY ____.",
+    "options": {
+      "A": "does the same thing",
+      "B": "alters the order of the rows in a table",
+      "C": "modifies the presentation by changing the order of the result set",
+      "D": "removes duplicates in the table"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The ORDER BY clause is used in a SQL query to sort the rows of the result set in a specified order (ascending or descending). It does not change the data in the underlying table, only the presentation of the output.",
+      "incorrect": {
+        "A": "ORDER BY sorts data, whereas DISTINCT removes duplicate rows; they perform different functions.",
+        "B": "ORDER BY sorts the query's result set, not the physical or logical order of rows within the base table itself.",
+        "D": "This is the function of the DISTINCT keyword, not ORDER BY."
+      }
+    }
+  },
+  {
+    "question_number": 18,
+    "question_text": "A primary key ____.",
+    "options": {
+      "A": "is a minimal superkey",
+      "B": "is always the first field in each table",
+      "C": "must be numeric",
+      "D": "must be unique"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The defining characteristic of a primary key is that its value must be unique for each record in the table, ensuring that every record can be distinctly identified. It also cannot be null.",
+      "incorrect": {
+        "A": "While a primary key is a type of minimal superkey (a candidate key), its most fundamental rule for practical purposes is uniqueness. Option D is a more direct and universally understood rule.",
+        "B": "The position of the primary key column within the table structure is irrelevant.",
+        "C": "A primary key can be of various data types, including text, alphanumeric characters, or a combination of fields, not just numeric."
+      }
+    }
+  },
+  {
+    "question_number": 19,
+    "question_text": "A table can be logically connected to another table by defining a ____.",
+    "options": {
+      "A": "hyperlink",
+      "B": "common attribute",
+      "C": "primary key",
+      "D": "logic key"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "Tables in a relational database are linked through common attributes (fields). This is typically achieved by placing the primary key of one table into another table, where it becomes a foreign key.",
+      "incorrect": {
+        "A": "Hyperlinks are used in web pages and documents, not for connecting relational database tables.",
+        "C": "A primary key uniquely identifies rows within its own table but does not, by itself, connect to another table. It's the use of this key as a foreign key in another table that creates the link.",
+        "D": "'Logic key' is not a standard term in relational database theory."
+      }
+    }
+  },
+  {
+    "question_number": 20,
+    "question_text": "A relational operator that allows for the combination of information from two or more tables is known as the ____ operator.",
+    "options": {
+      "A": "SELECT",
+      "B": "PROJECT",
+      "C": "JOIN",
+      "D": "DIFFERENCE"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The JOIN operator is specifically designed to combine rows from two or more tables based on a related column between them.",
+      "incorrect": {
+        "A": "The SELECT operator retrieves rows from a table, but does not by itself combine tables.",
+        "B": "The PROJECT operator (part of relational algebra, conceptually similar to selecting specific columns in SQL) retrieves columns from a table, but does not combine tables.",
+        "D": "The DIFFERENCE operator returns the rows that are in one table but not in another; it doesn't combine information."
+      }
+    }
+  },
+  {
+    "question_number": 21,
+    "question_text": "Which of the following statements concerning the primary key is true?",
+    "options": {
+      "A": "All primary key entries are unique.",
+      "B": "The primary key may be null.",
+      "C": "The primary key is not required for all tables.",
+      "D": "The primary key data do not have to be unique."
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The entity integrity rule mandates that all primary key entries must be unique and not null, ensuring each row is uniquely identifiable.",
+      "incorrect": {
+        "B": "The entity integrity rule explicitly states that a primary key cannot be null.",
+        "C": "While technically some database systems allow tables without primary keys, it is a fundamental principle of relational database design that every table should have one.",
+        "D": "This is incorrect; uniqueness is the core requirement of a primary key."
+      }
+    }
+  },
+  {
+    "question_number": 22,
+    "question_text": "We can describe a link by observing that ____.",
+    "options": {
+      "A": "a primary key of one table appears again as a primary key in a related table",
+      "B": "a foreign key of one table appears again as a foreign key in a related table",
+      "C": "a primary key of one table appears again as a foreign key in a related table",
+      "D": "a foreign key of one table appears again as a surrogate key in a related table"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The standard way to create a relationship (a link) between two tables is for the primary key of the 'one' side of the relationship to be added to the 'many' side table, where it functions as a foreign key.",
+      "incorrect": {
+        "A": "A primary key is unique within its own table. If it appeared as a primary key in another table, that would imply a different set of entities, not a link between them.",
+        "B": "Foreign keys link back to primary keys, not to other foreign keys.",
+        "D": "A surrogate key is a system-generated unique identifier for a row, serving as a primary key. A foreign key links to a primary key, not a surrogate key in another table (unless that surrogate key is the primary key)."
+      }
+    }
+  },
+  {
+    "question_number": 23,
+    "question_text": "\"When designing a new database, it is a good idea to ____.\"",
+    "options": {
+      "A": "minimize data redundancy",
+      "B": "include redundant fields",
+      "C": "include a common field in all tables",
+      "D": "use composite keys"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "A primary goal of database design, particularly normalization, is to minimize data redundancy. This reduces storage space, prevents data anomalies, and improves data integrity.",
+      "incorrect": {
+        "B": "Including redundant fields is generally a bad practice that leads to update, insertion, and deletion anomalies.",
+        "C": "There is no design principle that requires a single common field to be in all tables. Fields should be placed where they logically belong.",
+        "D": "Composite keys should be used when necessary (when a single attribute cannot provide uniqueness), but it's not a general goal to use them. The goal is to use the most appropriate key."
+      }
+    }
+  },
+  {
+    "question_number": 24,
+    "question_text": "An attribute (or combination of attributes) that uniquely identifies each entity in a table is called a ____.",
+    "options": {
+      "A": "superkey",
+      "B": "foreign key",
+      "C": "master key",
+      "D": "secondary key"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "A superkey is defined as any set of one or more attributes that, taken collectively, allows us to uniquely identify an entity in the entity set. A primary key is a type of minimal superkey.",
+      "incorrect": {
+        "B": "A foreign key is used to link to a primary key in another table; it does not uniquely identify rows in its own table.",
+        "C": "'Master key' is not a standard term for this concept in relational databases.",
+        "D": "A secondary key is an attribute used strictly for retrieval purposes and does not guarantee uniqueness."
+      }
+    }
+  },
+  {
+    "question_number": 25,
+    "question_text": "A foreign key must ____.",
+    "options": {
+      "A": "be numeric",
+      "B": "be unique",
+      "C": "be defined in all tables within the database",
+      "D": "match the value of a primary key in a related table"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The rule of referential integrity dictates that a foreign key's value must either be null or match an existing value in the primary key of the table it references.",
+      "incorrect": {
+        "A": "A foreign key's data type must match the data type of the primary key it references, which is not necessarily numeric.",
+        "B": "A foreign key does not need to be unique; in a one-to-many relationship, the foreign key value on the 'many' side will be repeated.",
+        "C": "Foreign keys are only defined in tables that need to be linked to another table; not all tables require a foreign key."
+      }
+    }
+  },
+  {
+    "question_number": 26,
+    "question_text": "The Entity Relationship Diagram (ERD) is used to graphically represent the ____ database model.",
+    "options": {
+      "A": "condensed",
+      "B": "physical",
+      "C": "logical",
+      "D": "conceptual"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The ERD is a high-level visualization tool used to create the conceptual model of a database. It depicts the main entities and the relationships among them before any specific database management system is chosen.",
+      "incorrect": {
+        "A": "'Condensed' is not a standard term for a database model type.",
+        "B": "The physical model describes the actual implementation in a specific DBMS, including storage details and indexes, which is more detailed than an ERD.",
+        "C": "The logical model translates the conceptual model into a specific data model (like the relational model) but without the physical implementation details. While related, the ERD is primarily for the initial conceptual phase."
+      }
+    }
+  },
+  {
+    "question_number": 27,
+    "question_text": "A derived attribute ____.",
+    "options": {
+      "A": "must be stored physically within the database",
+      "B": "need not be physically stored within the database",
+      "C": "has many values",
+      "D": "must be based on the value of three or more attributes"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "A derived attribute is an attribute whose value can be calculated or inferred from other attributes. Because it can be computed on demand, it does not need to be physically stored in the database, which saves space and avoids redundancy. An example is calculating `Age` from a stored `DateOfBirth`.",
+      "incorrect": {
+        "A": "This is incorrect. The point of a derived attribute is to avoid physical storage.",
+        "C": "An attribute that can have many values is called a multivalued attribute, which is a different concept.",
+        "D": "A derived attribute can be based on any number of other attributes, including just one."
+      }
+    }
+  },
+  {
+    "question_number": 28,
+    "question_text": "A relationship is an association between ____.",
+    "options": {
+      "A": "objects",
+      "B": "entities",
+      "C": "databases",
+      "D": "fields"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "In the context of the Entity-Relationship model, a relationship is defined as an association between two or more entities.",
+      "incorrect": {
+        "A": "'Objects' is a more general term; 'entities' is the specific term used in ER modeling.",
+        "C": "A relationship exists between entities within a single database, not between separate databases.",
+        "D": "A relationship is between entire entities (tables), not just individual fields (attributes)."
+      }
+    }
+  },
+  {
+    "question_number": 29,
+    "question_text": "A ____ key is a key that consists of more than one attribute.",
+    "options": {
+      "A": "primary",
+      "B": "foreign",
+      "C": "composite",
+      "D": "domain"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "A composite key is a key that is formed by combining two or more attributes to uniquely identify a record in a table.",
+      "incorrect": {
+        "A": "A primary key can be composite, but it can also be a single attribute. The term that specifically means 'more than one attribute' is 'composite'.",
+        "B": "A foreign key can also be composite, but its primary function is to link tables, not just that it consists of more than one attribute.",
+        "D": "A domain is the set of all possible values for a single attribute, not a type of key."
+      }
+    }
+  },
+  {
+    "question_number": 30,
+    "question_text": "A(n) ____ attribute is one that cannot be subdivided.",
+    "options": {
+      "A": "composite",
+      "B": "atomic",
+      "C": "binary-valued",
+      "D": "multivalued"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "An atomic (or simple) attribute is one that holds a single value that cannot be broken down into smaller, meaningful parts. For example, 'Gender' is atomic, whereas 'Address' is not (it can be broken into street, city, etc.).",
+      "incorrect": {
+        "A": "A composite attribute is the opposite; it can be subdivided into smaller parts.",
+        "C": "'Binary-valued' is not a standard classification for attributes in this context.",
+        "D": "A multivalued attribute is one that can hold multiple values at the same time for a single record (e.g., 'Phone_Number')."
+      }
+    }
+  },
+  {
+    "question_number": 31,
+    "question_text": "\"If an entity can exist apart from one or more related entities, it is said to be ____-independent.\"",
+    "options": {
+      "A": "existence",
+      "B": "relationship",
+      "C": "business",
+      "D": "weak"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "An entity is existence-independent if its existence does not depend on being related to another entity. Such an entity is also called a strong entity.",
+      "incorrect": {
+        "B": "'Relationship-independent' is not a standard term.",
+        "C": "'Business-independent' is not a standard database term.",
+        "D": "A weak entity is the opposite; its existence depends on another entity."
+      }
+    }
+  },
+  {
+    "question_number": 32,
+    "question_text": "A ____ relationship exists when three entities are associated.",
+    "options": {
+      "A": "unary",
+      "B": "binary",
+      "C": "ternary",
+      "D": "weak"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The degree of a relationship is determined by the number of entities it associates. A relationship associating three entities is called a ternary relationship.",
+      "incorrect": {
+        "A": "A unary relationship involves a single entity.",
+        "B": "A binary relationship involves two entities.",
+        "D": "A weak relationship describes dependency, not the number of associated entities."
+      }
+    }
+  },
+  {
+    "question_number": 33,
+    "question_text": "The set of possible values for an attribute is a ____.",
+    "options": {
+      "A": "domain",
+      "B": "range",
+      "C": "set",
+      "D": "key"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "An attribute's domain is the collection of all permissible values that the attribute can hold. For example, the domain for a 'Gender' attribute might be {'Male', 'Female', 'Other'}.",
+      "incorrect": {
+        "B": "'Range' is often used in a mathematical context but 'domain' is the specific term used in database theory.",
+        "C": "'Set' is a general mathematical term; 'domain' is more specific in this context.",
+        "D": "A key is an attribute used for identification, not the set of all possible values."
+      }
+    }
+  },
+  {
+    "question_number": 34,
+    "question_text": "Which attribute(s) make up the primary key in the table definition: CLASS (CRS_CODE, CLASS_SECTION, CLASS_TIME, CLASS_ROOM, PROF_NUM)",
+    "options": {
+      "A": "CRS_CODE",
+      "B": "CLASS_SECTION",
+      "C": "CRS_CODE and CLASS_SECTION",
+      "D": "There is no primary key"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "In this context, CRS_CODE alone is not unique (e.g., 'DB101' might have multiple sections). CLASS_SECTION alone is not unique (e.g., 'Section 1' exists for many courses). Together, the combination of CRS_CODE and CLASS_SECTION (e.g., 'DB101, Section 1') uniquely identifies a specific class offering, forming a composite primary key. The underlining of both attributes is a common convention to denote a composite key.",
+      "incorrect": {
+        "A": "CRS_CODE is not unique on its own, as a course can have many sections.",
+        "B": "CLASS_SECTION is not unique on its own, as many courses can have a 'Section 1'.",
+        "D": "The underlining of CRS_CODE and CLASS_SECTION indicates that they form a primary key."
+      }
+    }
+  },
+  {
+    "question_number": 35,
+    "question_text": "\"A table that has all key attributes defined, has no repeating groups, and all its attributes are dependent on the primary key, is said to be in ____.\"",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "4NF"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "This question describes the requirements for the First Normal Form (1NF). A table is in 1NF if it has a primary key, each cell holds a single value (no repeating groups or multivalued attributes), and all attributes are dependent on the primary key.",
+      "incorrect": {
+        "B": "2NF requires the table to be in 1NF and also to have no partial dependencies.",
+        "C": "3NF requires the table to be in 2NF and also to have no transitive dependencies.",
+        "D": "4NF deals with more complex multi-valued dependencies and requires the table to be in 3NF."
+      }
+    }
+  },
+  {
+    "question_number": 36,
+    "question_text": "A table that is in 2NF and contains no transitive dependencies is said to be in ____.",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "4NF"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "This is the definition of Third Normal Form (3NF). A table must first be in Second Normal Form (2NF), and then all transitive dependencies (where a non-key attribute depends on another non-key attribute) must be removed.",
+      "incorrect": {
+        "A": "A table in 3NF is also in 1NF, but this definition specifically adds the 'no transitive dependencies' rule to 2NF, which defines 3NF.",
+        "B": "The definition starts with a table already in 2NF and adds another condition, so the result is a higher normal form.",
+        "D": "4NF has stricter requirements than 3NF, dealing with multi-valued dependencies."
+      }
+    }
+  },
+  {
+    "question_number": 37,
+    "question_text": "Data redundancy produces ____.",
+    "options": {
+      "A": "slower lookups",
+      "B": "robust design",
+      "C": "efficient storage use",
+      "D": "data integrity problems"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "When the same piece of data is stored in multiple places, it can lead to inconsistencies if it's updated in one location but not another. This is a major cause of data integrity problems and data anomalies.",
+      "incorrect": {
+        "A": "While redundancy can sometimes lead to slower updates, it doesn't necessarily cause slower lookups. In some denormalized designs, it can even speed up lookups at the cost of other issues.",
+        "B": "Redundancy leads to a fragile design, not a robust one, because of the risk of data inconsistencies.",
+        "C": "Storing the same data multiple times is inefficient and wastes storage space."
+      }
+    }
+  },
+  {
+    "question_number": 38,
+    "question_text": "Normalization works through a series of normal ____.",
+    "options": {
+      "A": "schemas",
+      "B": "entities",
+      "C": "databases",
+      "D": "forms"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. This process involves applying a series of rules or guidelines called normal forms (e.g., 1NF, 2NF, 3NF).",
+      "incorrect": {
+        "A": "A schema is the structure of a database, which is what normalization helps to design, but the stages are called 'forms'.",
+        "B": "Entities are the objects about which data is stored; normalization is a process applied to the structure of these entities.",
+        "C": "Normalization is applied to the tables within a database, not to the database as a whole in this context."
+      }
+    }
+  },
+  {
+    "question_number": 39,
+    "question_text": "Dependencies based on only a part of a composite primary key are called ____ dependencies.",
+    "options": {
+      "A": "primary",
+      "B": "partial",
+      "C": "incomplete",
+      "D": "composite"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "A partial dependency occurs when a non-key attribute is functionally dependent on only a part of a composite primary key, not the entire key. Eliminating partial dependencies is the goal of converting a table from 1NF to 2NF.",
+      "incorrect": {
+        "A": "'Primary dependency' is not a standard term. All non-key attributes should have a full functional dependency on the primary key.",
+        "C": "'Incomplete dependency' is not a standard term; 'partial' is the correct term.",
+        "D": "'Composite dependency' is not a standard term. A key can be composite, but the dependency type is called partial."
+      }
+    }
+  },
+  {
+    "question_number": 40,
+    "question_text": "Given the table EMP_PROJ (PROJ_NUM, EMP_NUM, PROJ_NAME, EMP_NAME, PROJ_START, HOURS) (shown above), which of the following is a partial dependency?",
+    "options": {
+      "A": "PROJ_NUM --> PROJ_NAME",
+      "B": "PROJ_NAME --> HOURS",
+      "C": "PROJ_NUM, EMP_NUM --> HOURS",
+      "D": "PROJ_NUM, EMP_NUM --> PROJ_NAME"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The primary key for this table is the composite key (PROJ_NUM, EMP_NUM). A partial dependency exists if a non-key attribute depends on only part of this key. Here, PROJ_NAME is determined by PROJ_NUM alone. For any given PROJ_NUM, the PROJ_NAME is the same regardless of the EMP_NUM. Therefore, PROJ_NUM --> PROJ_NAME is a partial dependency.",
+      "incorrect": {
+        "B": "HOURS likely depends on both the employee and the project, not just the project name.",
+        "C": "This shows a dependency on the full composite primary key, which is a full functional dependency, not a partial one. The hours worked are specific to one employee on one project.",
+        "D": "This also shows a dependency on the full primary key. While the statement itself may be true, the simpler dependency (PROJ_NUM --> PROJ_NAME) reveals the partial dependency."
+      }
+    }
+  },
+  {
+    "question_number": 41,
+    "question_text": "A relation is not in 1NF if _______.",
+    "options": {
+      "A": "it has multiple candidate keys",
+      "B": "all the key attributes are defined",
+      "C": "there are repeating groups in the table",
+      "D": "all attributes are dependent on the primary key"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "A key requirement for First Normal Form (1NF) is that every cell must hold a single, atomic value. The presence of repeating groups (multiple columns for the same type of data, like Course1, Course2) or multivalued attributes in a single cell violates this rule.",
+      "incorrect": {
+        "A": "Having multiple candidate keys is perfectly acceptable and does not violate 1NF.",
+        "B": "Defining all key attributes is a requirement for 1NF, not a violation of it.",
+        "D": "Having all attributes dependent on the primary key is a requirement for 1NF, not a violation of it."
+      }
+    }
+  },
+  {
+    "question_number": 42,
+    "question_text": "\"The SQL command that lets you insert data into a table, one row at a time, is ____.\"",
+    "options": {
+      "A": "INSERT",
+      "B": "SELECT",
+      "C": "COMMIT",
+      "D": "UPDATE"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The `INSERT INTO` command is the standard SQL Data Manipulation Language (DML) statement used to add one or more new rows of data into a table.",
+      "incorrect": {
+        "B": "`SELECT` is used to retrieve data from a table.",
+        "C": "`COMMIT` is used to save changes made during a transaction permanently.",
+        "D": "`UPDATE` is used to modify existing data within a table."
+      }
+    }
+  },
+  {
+    "question_number": 43,
+    "question_text": "The SQL command that enables you to make changes in the data is ____.",
+    "options": {
+      "A": "INSERT",
+      "B": "SELECT",
+      "C": "COMMIT",
+      "D": "UPDATE"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The `UPDATE` command is the standard SQL Data Manipulation Language (DML) statement used to modify existing records in a table.",
+      "incorrect": {
+        "A": "`INSERT` is used to add new data to a table.",
+        "B": "`SELECT` is used to retrieve data from a table.",
+        "C": "`COMMIT` is used to save changes made during a transaction permanently."
+      }
+    }
+  },
+  {
+    "question_number": 44,
+    "question_text": "\"To list all the contents of the PRODUCT table, you would use ____.\"",
+    "options": {
+      "A": "LIST * FROM PRODUCT;",
+      "B": "SELECT * FROM PRODUCT;",
+      "C": "DISPLAY * FROM PRODUCT;",
+      "D": "SELECT ALL FROM PRODUCT;"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "The standard SQL syntax to retrieve all columns (*) and all rows from a table is `SELECT * FROM tablename;`.",
+      "incorrect": {
+        "A": "`LIST` is not a standard SQL command for retrieving data.",
+        "C": "`DISPLAY` is not a standard SQL command for retrieving data.",
+        "D": "`SELECT ALL` is not the correct syntax. While `ALL` is the default behavior, the asterisk (`*`) is used to specify all columns."
+      }
+    }
+  },
+  {
+    "question_number": 45,
+    "question_text": "Which command would you use when making corrections to the PRODUCT table?",
+    "options": {
+      "A": "CHANGE PRODUCT, SET P_INDATE = '01/18/2004', WHERE P_CODE = '13-Q2/P2';",
+      "B": "ROLLBACK PRODUCT, SET P_INDATE = '01/18/2004', WHERE P_CODE = '13-Q2/P2';",
+      "C": "EDIT PRODUCT, SET P_INDATE = '01/18/2004', WHERE P_CODE = '13-Q2/P2';",
+      "D": "UPDATE PRODUCT, SET P_INDATE = '01/18/2004', WHERE P_CODE = '13-Q2/P2';"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The correct SQL syntax to modify an existing record is `UPDATE tablename SET columnname = new_value WHERE condition;`. This query correctly uses the UPDATE, SET, and WHERE clauses.",
+      "incorrect": {
+        "A": "`CHANGE` is not the standard SQL command for this operation; `UPDATE` is.",
+        "B": "`ROLLBACK` is used to undo transactions, not to make specific data changes.",
+        "C": "`EDIT` is not a standard SQL command for this operation."
+      }
+    }
+  },
+  {
+    "question_number": 46,
+    "question_text": "Which command would be used to delete the table row where the P_Code = '2238/QPD'?",
+    "options": {
+      "A": "DELETE FROM PRODUCT, WHERE P_CODE = '2238/QPD';",
+      "B": "REMOVE FROM PRODUCT, WHERE P_CODE = '2238/QPD';",
+      "C": "ERASE FROM PRODUCT, WHERE P_CODE = '2238/QPD';",
+      "D": "ROLLBACK FROM PRODUCT, WHERE P_CODE = '2238/QPD';"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The correct SQL syntax for deleting rows from a table is `DELETE FROM tablename WHERE condition;`. This query correctly identifies the table and the condition for deletion.",
+      "incorrect": {
+        "B": "`REMOVE` is not a standard SQL command for deleting rows.",
+        "C": "`ERASE` is not a standard SQL command for deleting rows.",
+        "D": "`ROLLBACK` is used to undo an entire transaction, not to delete specific rows based on a condition."
+      }
+    }
+  },
+  {
+    "question_number": 47,
+    "question_text": "Which command is used to select partial table contents?",
+    "options": {
+      "A": "SELECT <column(s)>, FROM <Table name>, WHERE <Item>;",
+      "B": "LIST <column(s)>, FROM <Table name>, WHERE <Conditions>;",
+      "C": "SELECT <column(s)>, FROM <Table name>, WHERE <Conditions>;",
+      "D": "LIST<column(s)>, FROM <Table name>, WHERE <Item>;"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "To select partial contents, you specify the desired columns after `SELECT`, the table after `FROM`, and use the `WHERE` clause to filter rows based on specific conditions. This provides the correct structure.",
+      "incorrect": {
+        "A": "The syntax is correct, but `<Conditions>` is a more general and accurate term than `<Item>` for the `WHERE` clause.",
+        "B": "`LIST` is not a standard SQL command.",
+        "D": "`LIST` is not a standard SQL command, and `<Conditions>` is more appropriate than `<Item>`."
+      }
+    }
+  },
+  {
+    "question_number": 48,
+    "question_text": "Which query will output the table contents when the value of V_CODE is less than or equal to 21344?",
+    "options": {
+      "A": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE <> 21344;",
+      "B": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE <= 21344;",
+      "C": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE => 21344;",
+      "D": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE = 21344;"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "The standard SQL operator for 'less than or equal to' is `<=`. This query correctly uses this operator in the `WHERE` clause to filter the results as requested.",
+      "incorrect": {
+        "A": "The `<>` operator means 'not equal to', which is incorrect.",
+        "C": "The `=>` operator is not standard SQL syntax; `>=` is used for 'greater than or equal to'.",
+        "D": "The `=` operator will only select rows where the value is exactly equal to 21344, not less than."
+      }
+    }
+  },
+  {
+    "question_number": 49,
+    "question_text": "\"Which query will list all the rows in which the inventory stock dates occur on or after January 20, 2006?\"",
+    "options": {
+      "A": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE, FROM PRODUCT, WHERE P_INDICATE >= '2006-01-20'",
+      "B": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE, FROM PRODUCT, WHERE P_INDICATE >= #01/20/2004#",
+      "C": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE, FROM PRODUCT, WHERE P_INDICATE >= '20-JAN-2004'",
+      "D": "SELECT P_DESCRIPT, P_QOH, P_MIN, P_PRICE, P_INDATE, FROM PRODUCT, WHERE P_INDICATE >= {01-20-2004}"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The `YYYY-MM-DD` format enclosed in single quotes is a standard and unambiguous way to represent a date literal in SQL. The `>=` operator correctly finds dates 'on or after' the specified date.",
+      "incorrect": {
+        "B": "The hash signs (`#`) are used for dates in some systems like MS Access, but it is not standard ANSI SQL.",
+        "C": "This format might work in some specific database configurations (like Oracle), but `YYYY-MM-DD` is more universally accepted. Also, the year is incorrect (2004 instead of 2006).",
+        "D": "Braces (`{}`) are not used for date literals in standard SQL."
+      }
+    }
+  },
+  {
+    "question_number": 50,
+    "question_text": "What is the SQL syntax requirement to list the table contents for either V_CODE = 21344 or V_CODE = 24288?",
+    "options": {
+      "A": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE = 21344, OR V_CODE <= 24288",
+      "B": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE = 21344, OR V_CODE => 24288",
+      "C": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE = 21344, OR V_CODE > 24288",
+      "D": "SELECT P_DESCRIPT, P_INDATE, P_PRICE, V_CODE, FROM PRODUCT, WHERE V_CODE = 21344, OR V_CODE = 24288"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "To select rows that match one of two (or more) specific conditions, the `OR` logical operator is used to combine the conditions in the `WHERE` clause. This query correctly checks if V_CODE is equal to the first value OR equal to the second value. An alternative syntax would be `WHERE V_CODE IN (21344, 24288)`.",
+      "incorrect": {
+        "A": "Using `<=` would incorrectly include all values less than 24288, not just the two specified values.",
+        "B": "Using `=>` (which is invalid syntax anyway) would incorrectly include values greater than 24288.",
+        "C": "Using `>` would incorrectly include values greater than 24288."
+      }
+    }
+  },
+  {
+    "question_number": 51,
+    "question_text": "\"What is the command to join the P_DESCRIPT and P_PRICE fields from the PRODUCT table and the V_NAME, V_AREACODE, V_PHONE, and V_CONTACT fields from the VENDOR table where the value of V_CODE match?\"",
+    "options": {
+      "A": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE <> VENDOR.V_CODE;",
+      "B": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE = VENDOR.V_CODE;",
+      "C": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE <= VENDOR.V_CODE;",
+      "D": "SELECT P_DESCRIPT, P_PRICE, V_NAME, V_CONTACT, V_AREACODE, V_PHONE FROM PRODUCT, VENDOR WHERE PRODUCT.V_CODE => VENDOR.V_CODE;"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "This query correctly performs an inner join. It lists the specified columns in the `SELECT` clause, lists the two tables to be joined in the `FROM` clause, and uses the `WHERE` clause with an equality operator (`=`) to specify the join condition—that the V_CODE values in both tables must match.",
+      "incorrect": {
+        "A": "The `<>` (not equal) operator would return combinations of rows that do not match, which is the opposite of the desired result.",
+        "C": "The `<=` operator would create an invalid join based on an inequality, not a direct match.",
+        "D": "The `=>` operator is invalid syntax and would not create the correct join."
+      }
+    }
+  },
+  {
+    "question_number": 52,
+    "question_text": "SQL allows the use of special operators in conjunction with the WHERE clause. A special operator used to check for similar character strings is ____.",
+    "options": {
+      "A": "BETWEEN",
+      "B": "IS NULL",
+      "C": "LIKE",
+      "D": "IN"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The `LIKE` operator is used for pattern matching in character strings. It is used with wildcard characters, such as `%` (matches any sequence of characters) and `_` (matches any single character), to find similar but not necessarily identical strings.",
+      "incorrect": {
+        "A": "`BETWEEN` is used to check if a value falls within a range of values.",
+        "B": "`IS NULL` is used to check if a column has no value.",
+        "D": "`IN` is used to check if a value matches any value in a list of specified values."
+      }
+    }
+  },
+  {
+    "question_number": 53,
+    "question_text": "A table can be deleted from the database by using the ____ command.",
+    "options": {
+      "A": "DROP",
+      "B": "DELETE",
+      "C": "MODIFY",
+      "D": "ERASE"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The `DROP TABLE` command is a Data Definition Language (DDL) statement that permanently removes a table's definition, all its data, and its indexes from the database.",
+      "incorrect": {
+        "B": "`DELETE` is a Data Manipulation Language (DML) command used to remove rows (data) from a table, but it does not remove the table structure itself.",
+        "C": "`MODIFY` (or `ALTER`) is used to change the structure of a table, not delete it.",
+        "D": "`ERASE` is not a standard SQL command."
+      }
+    }
+  },
+  {
+    "question_number": 54,
+    "question_text": "UPDATE tablename,__________________,\"[WHERE conditionlist];\"",
+    "options": {
+      "A": "SET columnname = expression",
+      "B": "columnname = expression",
+      "C": "expression = columnname",
+      "D": "LET columnname = expression"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The correct syntax for the `UPDATE` statement requires the `SET` keyword, followed by the column to be changed, an equals sign, and the new value or expression.",
+      "incorrect": {
+        "B": "This is missing the required `SET` keyword.",
+        "C": "This reverses the correct order; the column name must come before the expression.",
+        "D": "`LET` is not a keyword used in the SQL `UPDATE` statement."
+      }
+    }
+  },
+  {
+    "question_number": 55,
+    "question_text": "A ____ join returns rows with matching values and includes all rows from both tables (T1 and T2) with unmatched values.",
+    "options": {
+      "A": "natural",
+      "B": "cross",
+      "C": "full outer",
+      "D": "left outer"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "A `FULL OUTER JOIN` combines the results of both a left outer join and a right outer join. It returns all rows from both tables, matching them where possible. Where no match exists, the columns from the non-matching table will be filled with NULL values.",
+      "incorrect": {
+        "A": "A `NATURAL JOIN` is a type of inner join that only returns matching rows.",
+        "B": "A `CROSS JOIN` returns the Cartesian product of the two tables (every row from the first table combined with every row from the second), without any matching condition.",
+        "D": "A `LEFT OUTER JOIN` returns all rows from the left table and only the matched rows from the right table. Unmatched rows from the right table are not included."
+      }
+    }
+  },
+  {
+    "question_number": 56,
+    "question_text": "\"During which step in the extract, transform, load (ETL) process are raw data sets aggregated?\"",
+    "options": {
+      "A": "Transformation",
+      "B": "Extraction",
+      "C": "Loading",
+      "D": "Denormalization"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The Transformation step is where data is cleaned, validated, and converted into the desired format. This includes operations like data summations, calculations, and aggregations.",
+      "incorrect": {
+        "B": "Extraction is the process of retrieving the raw data from its source systems.",
+        "C": "Loading is the final step where the transformed data is deposited into the target data warehouse or database.",
+        "D": "Denormalization is a specific technique that might be used during transformation, but 'Transformation' is the name of the overall step where aggregation occurs."
+      }
+    }
+  },
+  {
+    "question_number": 57,
+    "question_text": "\"Which is an important issue associated with the loading component of extract, transform, load (ETL)?\"",
+    "options": {
+      "A": "Mapping keys from one system to another.",
+      "B": "Monitor refreshing volume and frequency.",
+      "C": "Determining the content of the data.",
+      "D": "Denormalizing and renormalizing data."
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "During the loading phase, it is critical to manage the performance and logistics of moving data into the warehouse. This includes deciding whether to do a full refresh or incremental loads and monitoring the volume and frequency of these data transfers to ensure the system can handle it.",
+      "incorrect": {
+        "A": "Mapping keys typically occurs during the Transformation phase.",
+        "C": "Determining the content of the data (data profiling) happens during Extraction and Transformation.",
+        "D": "Denormalizing and renormalizing are activities that occur during the Transformation phase."
+      }
+    }
+  },
+  {
+    "question_number": 58,
+    "question_text": "Scenario: Each teacher is associated with exactly one campus. The address in the table is the address for the campus where the teacher teaches. What change would you need to make to normalize the database to the third normal form (3NF)?",
+    "options": {
+      "A": "Combine the FirstName and LastName columns into a single column.",
+      "B": "Combine the Campus, Address, City, State, Country, and PostalCode columns into a single column.",
+      "C": "Create a separate table for campus address information. Use the Campus as the primary key. Add a TeacherID column to the table and relate it to the Teacher ID column in the Teachers table.",
+      "D": "Create a separate table for campus address information. Use Campus as the primary key for the table. Create a foreign key in the Teachers table that relates teacher to the campus."
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "The current table has a transitive dependency: TeacherID -> Campus -> Address. The address information depends on the Campus, which in turn depends on the TeacherID. To achieve 3NF, this transitive dependency must be removed. This is done by creating a new `Campus` table with `Campus` as its primary key and all the address fields. The original `Teachers` table will then only contain a foreign key column for `Campus`, linking to the new table.",
+      "incorrect": {
+        "A": "Combining name columns is a matter of style or preference; it does not address any normalization issues here.",
+        "B": "Combining address columns into one would violate 1NF by creating multivalued fields.",
+        "C": "This incorrectly suggests putting the TeacherID in the new Campus table. This would create a one-to-one relationship from Campus to Teacher, which is the reverse of what is needed."
+      }
+    }
+  },
+  {
+    "question_number": 59,
+    "question_text": "Which statement will remove all rows from the Materials table that have a Status value of ‘Obsolete’ but do not have a value for the VendorID column?",
+    "options": {
+      "A": "DELETE Materials WHERE Status = ‘Obsolete’ OR VendorID IS NULL",
+      "B": "DELETE FROM Materials WHERE Status = ‘Obsolete’ AND VendorID IS NULL",
+      "C": "DELETE MaterialID, Description, Status, VendorID FROM Materials WHERE Status = ‘Obsolete’ AND VendorID IS NULL",
+      "D": "DELETE FROM Materials WHERE Status = ‘Obsolete’, WHERE VendorID IS NULL"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "The `DELETE FROM` statement is the correct command. The question requires two conditions to be met simultaneously ('obsolete' status AND null VendorID), so the `AND` logical operator is required. The correct way to check for a null value is with `IS NULL`.",
+      "incorrect": {
+        "A": "The `OR` operator would delete rows that are obsolete, regardless of VendorID, and also rows that have a null VendorID, regardless of status. This is not what was requested.",
+        "C": "The `DELETE` statement operates on entire rows; you do not specify column names to delete.",
+        "D": "You cannot use two separate `WHERE` clauses; multiple conditions must be combined in a single `WHERE` clause using logical operators like `AND` or `OR`."
+      }
+    }
+  },
+  {
+    "question_number": 60,
+    "question_text": "The table above has the following characteristics: Each student has a unique StudentID that references the Students table. A specific test can be taken more than once. Each instructor has a unique InstructorID that references the Instructors table. Each student may take multiple tests on the same date. Each student may take tests on multiple dates. What column or columns should you use for the primary key?",
+    "options": {
+      "A": "StudentID, Date",
+      "B": "StudentID, Test, Date, InstructorID",
+      "C": "StudentID, Test, and Date",
+      "D": "Test"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "To uniquely identify a row in this table, we need a combination of attributes. A student (`StudentID`) can take a specific test (`Test`) on a particular (`Date`). According to the rules, a student can take multiple tests on the same date, so `(StudentID, Date)` is not unique. A student can also take the same test more than once (implying on different dates). The combination of `(StudentID, Test, Date)` would uniquely identify a specific test-taking event.",
+      "incorrect": {
+        "A": "This is not unique because the rules state a student can take multiple tests on the same date.",
+        "B": "This combination would work, but it may not be a minimal key. If the `InstructorID` is determined by the `(StudentID, Test, Date)` combination, then including it in the primary key would be redundant.",
+        "D": "`Test` is not unique, as many students can take the same test."
+      }
+    }
+  },
+  {
+    "question_number": 61,
+    "question_text": "Scenario: You are creating a relational database to store information about instructors and the courses that each instructor teaches. Each course is taught by a single instructor. You have created an Instructor table and a Course table as shown above. You need to create a relationship between the Instructor table and the Course table. You need to keep duplicate data to a minimum. How would you do this?",
+    "options": {
+      "A": "Create a new column in the Instructor table.",
+      "B": "Create new columns in the Instructors table for each course taught.",
+      "C": "Create a new table that includes two columns.",
+      "D": "Create a new column in the Course table"
+    },
+    "correct_answer": "D",
+    "explanation": {
+      "correct": "This scenario describes a one-to-many relationship (one instructor teaches many courses, but each course is taught by one instructor). To implement this, you add a foreign key column to the table on the 'many' side of the relationship. In this case, you would add a new column, such as `InstructorID`, to the `Course` table to refer to the primary key of the `Instructor` table.",
+      "incorrect": {
+        "A": "Creating a new column in the `Instructor` table (e.g., for CourseID) would only work if an instructor taught only one course, which is not the case.",
+        "B": "Creating new columns like `Course1`, `Course2` in the `Instructor` table violates 1NF and is an inflexible design.",
+        "C": "Creating a new linking table is the solution for a many-to-many relationship, not a one-to-many relationship."
+      }
+    }
+  },
+  {
+    "question_number": 62,
+    "question_text": "Which of the following is structured data?",
+    "options": {
+      "A": "Images",
+      "B": "Email attachments",
+      "C": "Records in a database",
+      "D": "Audio/Video"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "Structured data is data that adheres to a pre-defined data model and is therefore straightforward to analyze. Records in a database, with their defined fields and data types, are a prime example of structured data.",
+      "incorrect": {
+        "A": "Images are unstructured data, as they don't have a pre-defined model.",
+        "B": "Email attachments can be of any format and are generally considered unstructured or semi-structured.",
+        "D": "Audio and video files are classic examples of unstructured data."
+      }
+    }
+  },
+  {
+    "question_number": 63,
+    "question_text": "Scenario: Agents at the NWREA may be assigned as a mentor to zero or more other agents. However, each agent being mentored is mentored by only one NWREA agent. Which kind of relationship does the diagram depict?",
+    "options": {
+      "A": "Unary one-to-many",
+      "B": "Binary many-to-many",
+      "C": "Unary many-to-many",
+      "D": "Binary one-to-many"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The relationship is 'unary' because it exists within a single entity (Agent). An agent is related to another agent. It is 'one-to-many' because one agent (the mentor) can be related to 'zero or more' other agents (the mentees), while each mentee is related to only 'one' mentor. The crow's foot notation on one side of the recursive loop and the single bar on the other confirms this.",
+      "incorrect": {
+        "B": "The relationship is not binary; it only involves the Agent entity.",
+        "C": "A unary many-to-many relationship would imply a mentor could have many mentees and a mentee could have many mentors.",
+        "D": "The relationship is not binary."
+      }
+    }
+  },
+  {
+    "question_number": 64,
+    "question_text": "Scenario: Agents at the NWREA are assigned as a mentor to one other agent. Each NWREA mentor can only work with one agent at a time. Further, each agent is only mentored by one PNREA agent. However, while being mentored is required, being a mentor is not. Which kind of relationship does the diagram depict?",
+    "options": {
+      "A": "Unary one-to-many",
+      "B": "Binary many-to-many",
+      "C": "Unary one-to-one",
+      "D": "Binary one-to-many"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The relationship is 'unary' because it involves an association within the single 'Agent' entity. It is 'one-to-one' because the scenario states that a mentor can only have one agent, and each agent is mentored by only one agent.",
+      "incorrect": {
+        "A": "A one-to-many relationship would allow a mentor to have multiple mentees, which contradicts the scenario.",
+        "B": "The relationship is unary, not binary.",
+        "D": "The relationship is unary, not binary."
+      }
+    }
+  },
+  {
+    "question_number": 65,
+    "question_text": "What is the modality of appointment?",
+    "options": {
+      "A": "At least one",
+      "B": "Dependent on the quantity",
+      "C": "Two",
+      "D": "Two or more"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "Modality refers to the minimum number of associations. In the diagram, the inner symbol on the relationship line next to the 'PATIENT' entity is a single vertical bar (|). This symbol represents a minimum of one, meaning an Appointment must be associated with at least one Patient.",
+      "incorrect": {
+        "B": "Modality is defined by the diagram's symbols, not a variable quantity.",
+        "C": "The symbol does not mean 'two'.",
+        "D": "The symbol means 'one', not 'two or more'."
+      }
+    }
+  },
+  {
+    "question_number": 66,
+    "question_text": "What form is this table in?",
+    "options": {
+      "A": "Unnormalized",
+      "B": "1NF",
+      "C": "2NF",
+      "D": "3NF"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The table is unnormalized because it contains repeating groups. The columns 'Course 1', 'Course 2', 'Course 3', and 'Course 4' represent a repeating group of courses for a single registration. To be in 1NF, these should be broken out into separate rows.",
+      "incorrect": {
+        "B": "It violates 1NF because of the repeating groups.",
+        "C": "It cannot be in 2NF if it is not in 1NF.",
+        "D": "It cannot be in 3NF if it is not in 1NF."
+      }
+    }
+  },
+  {
+    "question_number": 67,
+    "question_text": "What form is this table in?",
+    "options": {
+      "A": "Unnormalized",
+      "B": "1NF",
+      "C": "2NF",
+      "D": "3NF"
+    },
+    "correct_answer": "A",
+    "explanation": {
+      "correct": "The table is unnormalized for two reasons: it has a multivalued attribute (the 'Address' column contains multiple lines) and it has repeating groups ('Activity ID 1/Name 1', 'Activity ID 2/Name 2', etc.). Both of these violate the rules for 1NF.",
+      "incorrect": {
+        "B": "It violates 1NF due to the multivalued address and the repeating activity groups.",
+        "C": "It cannot be in 2NF because it is not in 1NF.",
+        "D": "It cannot be in 3NF because it is not in 1NF."
+      }
+    }
+  },
+  {
+    "question_number": 68,
+    "question_text": "What form is this table in?",
+    "options": {
+      "A": "Unnormalized",
+      "B": "1NF",
+      "C": "2NF",
+      "D": "3NF"
+    },
+    "correct_answer": "C",
+    "explanation": {
+      "correct": "The table is in 2NF. It is in 1NF because all fields are atomic and there are no repeating groups. Assuming the primary key is (Activity ID), there are no partial dependencies. However, it is not in 3NF because a transitive dependency exists: Activity ID -> Coordinator ID -> Coordinator Name/Phone. The Coordinator's details depend on the Coordinator ID, which is a non-key attribute.",
+      "incorrect": {
+        "A": "The table is normalized at least to 1NF as it has no repeating groups or multivalued attributes.",
+        "B": "It is in 1NF, but it is also in 2NF because it has no partial dependencies (assuming Activity ID is the key).",
+        "D": "It is not in 3NF because of the transitive dependency involving the Coordinator's details."
+      }
+    }
+  },
+  {
+    "question_number": 69,
+    "question_text": "What form is this table in?",
+    "options": {
+      "A": "Unnormalized",
+      "B": "1NF",
+      "C": "2NF",
+      "D": "3NF"
+    },
+    "correct_answer": "B",
+    "explanation": {
+      "correct": "The table is in 1NF. It meets the 1NF criteria because all cells contain single, atomic values, and there are no repeating groups. However, it is not in 2NF because it contains partial dependencies. Assuming the primary key is (Invoice Number, Item Number), attributes like 'Date', 'Patron Number', and 'Last Name' depend only on 'Invoice Number', not the full key. Similarly, 'Item Name' and 'Item Price' depend only on 'Item Number'.",
+      "incorrect": {
+        "A": "The table is in 1NF because it lacks repeating groups and multivalued attributes.",
+        "C": "It is not in 2NF due to the presence of multiple partial dependencies.",
+        "D": "It cannot be in 3NF because it is not in 2NF."
+      }
+    }
+  }
+]
